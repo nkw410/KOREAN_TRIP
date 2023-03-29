@@ -1,0 +1,85 @@
+@import url(common.css);
+
+main div.container h3 {
+  border-left: 10px solid #fd5f00;
+  font-weight: bold;
+  font-size: 33px;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  background: #ec942949; /*背景色*/
+  padding: 0.5em; /*文字周りの余白*/
+  width: 30%;
+}
+
+main div.food p.comment1 {
+  font-size: 15px;
+  margin-bottom: 37px;
+  line-height: 1.5;
+}
+
+main div.food p.comment2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+main div.food ul {
+  list-style: disc;
+  line-height: 1.5;
+  padding-left: 10px;
+}
+
+main div.food div.kimpa {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+main div.food p.kimuchi {
+  text-align: center;
+  margin-bottom: 73px;
+}
+
+main section.bestfood p.sam {
+  text-align: center;
+  margin-top: 62px;
+  margin-bottom: 62px;
+}
+
+main section.bestfood p {
+  line-height: 1.5;
+}
+
+main div.foodlist {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 21px;
+}
+@media (max-width: 767px) {
+  main div.foodlist {
+    display: block;
+  }
+}
+
+main div.foodlist section {
+  border: 2px solid #000;
+  height: 390px;
+  flex-basis: 500px;
+  padding-top: 13.54px;
+  padding-bottom: 26px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  margin-bottom: 97px;
+}
+
+main div.foodlist section h4 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+section.cm {
+  text-align: center;
+}

@@ -1,0 +1,302 @@
+@import url(common.css);
+
+main article div.secondmain p.ck {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 37px;
+  color: #333333;
+  padding-top: 50px;
+}
+@media (max-width: 767px) {
+  main article div.secondmain p.ck {
+    padding-top: 0;
+  }
+}
+
+main article div.secondmain {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  main article div.secondmain {
+    display: block;
+  }
+}
+
+div.guide h3 {
+  font-weight: 700;
+  font-size: 41.1426px;
+  color: #000000;
+  text-align: center;
+  margin-top: 78px;
+  margin-bottom: 84px;
+}
+
+div.guide h3:first-letter {
+  font-size: 60px;
+  color: #fd5f00;
+}
+
+div.guide {
+  max-width: 1010px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.guide div.up {
+  display: flex;
+  border-bottom: 1.25px solid #000000;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  div.guide div.up {
+    display: block;
+    border-bottom: unset;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+div.guide div.down {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  div.guide div.down {
+    display: block;
+  }
+}
+
+div.guide div.up section {
+  display: flex;
+  flex-basis: 337px;
+  column-gap: 12px;
+}
+@media (max-width: 767px) {
+  div.guide div.up section {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ef8a40;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+div.guide div.down section {
+  display: flex;
+  flex-basis: 337px;
+  column-gap: 12px;
+}
+@media (max-width: 767px) {
+  div.guide div.down section {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ef8a40;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+main div.guide h4 {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ef8a40;
+}
+@media (max-width: 767px) {
+  main div.guide h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+div.guide div.up section div a:hover {
+  text-decoration: underline;
+  color: #ef8a40;
+}
+
+div.guide div.down section div a:hover {
+  text-decoration: underline;
+  color: #ef8a40;
+}
+
+main div.guide p {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 19px;
+  text-align: center;
+}
+
+div.guide div.up section p {
+  transition: transform 0.3s;
+}
+div.guide div.up section p a:hover img {
+  transform: scale(1.1);
+}
+
+div.guide div.down section > p {
+  transition: transform 0.3s;
+}
+div.guide div.down section p a:hover img {
+  transform: scale(1.1);
+}
+
+main div.tenki h3 {
+  border-left: 10px solid #fd5f00;
+  padding: 0.3em; /*文字周りの余白*/
+  font-weight: bold;
+  font-size: 33px;
+  background: #ec942949; /*背景色*/
+  width: 30%;
+}
+
+section.narusi > div {
+  display: flex;
+  column-gap: 37px;
+}
+@media (max-width: 767px) {
+  section.narusi > div {
+    display: block;
+  }
+}
+
+section.narusi p {
+  flex: 1;
+  padding-top: 24px;
+  line-height: 20px;
+}
+
+main div.tenki h4 {
+  font-weight: 700;
+  font-size: 33px;
+}
+
+main div.tenki h4.haru span {
+  background: linear-gradient(transparent 60%, #e8a3d5 60%);
+  display: inline-block;
+  width: 240px;
+}
+
+main div.tenki h4.natsu span {
+  background: linear-gradient(transparent 60%, #75d9f9 60%);
+  display: inline-block;
+  width: 240px;
+}
+
+main div.tenki h4.aki span {
+  background: linear-gradient(transparent 60%, #ef8a40 60%);
+  display: inline-block;
+  width: 240px;
+}
+
+main div.tenki h4.fuyu span {
+  background: linear-gradient(transparent 60%, #55c54b 60%);
+  display: inline-block;
+  width: 240px;
+}
+
+main div.tenki strong {
+  font-weight: 700;
+  font-size: 25px;
+}
+main div.tenki strong span {
+  color: #fd5f00;
+}
+main div.tenki p {
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 34px;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  main div.tenki p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+main div.tenki div {
+  max-width: 975px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main div.sos h3 {
+  border-left: 10px solid #fd5f00;
+  font-weight: bold;
+  font-size: 33px;
+  margin-bottom: 16px;
+  background: #ec942949; /*背景色*/
+  padding: 0.5em; /*文字周りの余白*/
+  width: 30%;
+}
+
+main div.sos div {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  /* background-color: yellow; */
+  max-width: 975px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main div.sos h4 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 43px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  main div.sos h4 {
+    line-height: 1;
+  }
+}
+
+main div.sos strong {
+  font-size: 40px;
+  color: #fd5f00;
+  display: inline-block;
+  margin-top: 33px;
+  margin-bottom: 18px;
+  line-height: 50px;
+}
+
+main div.sos div.call {
+  display: flex;
+}
+@media (max-width: 767px) {
+  main div.sos div.call {
+    display: block;
+  }
+}
+
+main div.sos div.call ol {
+  flex: 1;
+  list-style: decimal;
+  padding-left: 30px;
+}
+
+main div.sos p.way {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+main div.sos div.call ol li {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+}
+section.cm {
+  text-align: center;
+}

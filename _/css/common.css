@@ -1,0 +1,284 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333333;
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  background-color: #fffdf8;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header {
+  color: #fd5f00;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+header h1 {
+  font-size: 40px;
+  /* padding-bottom: 14px; */
+  font-family: "Kanit";
+}
+@media (max-width: 575px) {
+  header {
+    padding-top: -20px;
+  }
+}
+
+.hmenu {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #fd5f00;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 21px;
+  right: 5px;
+}
+
+.hmenu span,
+.hmenu span::before,
+.hmenu span::after {
+  width: 38px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.hmenu span::before {
+  content: "";
+  bottom: 12px;
+}
+
+.hmenu span::after {
+  content: "";
+  top: 12px;
+}
+
+.hmenu.close span {
+  background-color: unset;
+}
+
+.hmenu.close span::before {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.hmenu.close span::after {
+  top: 0;
+  transform: rotate(45deg);
+}
+@media (max-width: 575px) {
+  .hmenu {
+    display: flex;
+  }
+}
+nav {
+  background-color: #fd5f00;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: rgb(253, 95, 0, 0.8);
+  z-index: 1;
+}
+@media (max-width: 575px) {
+  nav {
+    padding-bottom: 0;
+    /* display: none; */
+  }
+}
+
+nav ul {
+  color: #fff;
+  font-weight: 700;
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 575px) {
+  nav li {
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+
+nav li + li {
+  border-left: 1px solid #fff;
+}
+
+nav li a:hover {
+  opacity: 0.7;
+}
+
+h2 {
+  color: #005792;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  padding-top: 53px;
+  padding-bottom: 3px;
+  margin-top: 20px;
+  margin-bottom: 34px;
+  border-bottom: 3px solid #005792;
+}
+
+footer {
+  background-color: #fd5f00;
+  color: #fff;
+  padding-top: 16px;
+  padding-bottom: 6px;
+  /* margin-top: 30px; */
+}
+
+footer p.pagetop {
+  position: fixed;
+  right: 17px;
+  bottom: 24px;
+}
+
+footer p.pagetop a:hover {
+  opacity: 0.7;
+}
+
+footer div.Company ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+@media (max-width: 575px) {
+  footer div.Company ul {
+    display: block;
+    text-align: center;
+  }
+  footer div.Company ul li {
+    padding-bottom: 5px;
+  }
+}
+
+footer p.copyright {
+  text-align: center;
+  padding-top: 5px;
+}
+@media (max-width: 575px) {
+  footer p.copyright {
+    text-align: center;
+  }
+}
+
+section.cm p img {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 575px) {
+  nav {
+    width: 0;
+    height: calc(100% - 612px);
+    border: none;
+    /* box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2); */
+    position: absolute;
+    top: 71px;
+    right: 5px;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  .hmenu.close + nav {
+    width: 150px;
+  }
+
+  nav li {
+    padding-left: 20px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 575px) {
+  nav {
+    display: block !important;
+  }
+}
+
+/* #search-wrap {
+  position: absolute; /*絶対配置にして*/
+/* z-index: 2; /*最前面に設定。数字は変更可*/
+/* top: 10px;
+  right: 10px;
+/* } */
+
+/* #search-text { */
+/* color: #fff; */
+/* width: 60px; テキスト入力エリアが伸びる前の横幅 */
+/* height: 60px; */
+/* padding: 20px; */
+/* border: none; */
+/* background: #fd5f00 url(../img/mushimegane.png) no-repeat 17px center; 虫眼鏡アイコンを背景に表示 */
+/* background-size: 25px 25px; */
+/* transition: all 0.5s; transitionを使ってスムースに伸ばす */
+/* outline: none; */
+/* cursor: pointer; カーソルを指マークに */
+
+/* #search-text:focus {
+  width: 250px; /*テキスト入力エリアが伸びる後の横幅*/
+/* padding: 20px 0 20px 60px; */
+/* box-shadow: 0 2px rgba(6, 0, 1, 0.26); */
+/* } */
+/*
+@media (max-width: 575px) {
+  #search-wrap {
+    display: none;
+  }
+} */
+
+p.button1 a {
+  background-color: #fd5f00;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 25px;
+  padding: 12px 80px;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.281);
+}
+
+p.button1 a:hover {
+  opacity: 0.7;
+  box-shadow: none;
+  transform: translate(0, 5px);
+}
+
+div.backbotton p.button1 {
+  background-image: url(../img/airplain.png);
+  background-size: cover;
+  text-align: center;
+}

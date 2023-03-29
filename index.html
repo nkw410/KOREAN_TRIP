@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>KOREANTRIP</title>
+ <link rel="icon" href="img/K.png" type="image/png">
+ <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+ <link rel="stylesheet" href="css/top.css">
+ <script src="js/jquery-3.6.3.min.js"></script>
+</head>
+
+
+<body id="top">
+ <div class="container">
+  <header>
+   <p>日本から一番近い海外へ</p>
+   <h1><a href="index.html">KOREAN TRIP.COM</a></h1>
+   <!-- <form action="#" method="post">
+        <input type="text" value="明洞&#x3000;サムギョプサル"> -->
+   <!-- <input type="image" src="img/searchicon.png" alt="送信"> -->
+   <!-- </form> -->
+   <!-- <div id="search-wrap">
+        <form role="search" method="get" action="">
+          <input type="text" value="" name="" id="search-text">
+        </form> -->
+   <!-- </div> -->
+  </header>
+ </div>
+
+ <button class="hmenu "><span></span></button>
+ <nav>
+  <ul>
+   <li><a href="#">ログイン</a></li>
+   <li><a href="#">新規会員登録</a></li>
+   <li><a href="#kreserve">航空券予約</a></li>
+   <li><a href="#kreserve">ホテル予約</a></li>
+   <li><a href="#">予約確認</a></li>
+   <li><a href="#">初めての方へ</a></li>
+  </ul>
+ </nav>
+
+
+ <!-- メインビジュアル -->
+
+
+
+
+
+
+
+ <!-- メインメニュー -->
+ <main>
+
+  <!-- <div class="fadein">
+   <p class="js-fadeUp">初めての韓国は</p>
+   <p class="js-fadedown">ここから始めよう</p>
+  </div> -->
+
+  <div class="mainp">
+   <p><img src="img/korea-g07e7e837b_1920 2.png" alt=""></p>
+  </div>
+
+
+
+  <div class="container">
+   <ul class="slider">
+    <li>
+     <a href="#"><img src="img/canva/rentalpng.png" alt="広告"></a>
+    </li>
+    <li><a href="#"><img src="img/canva/4starhotel.png" alt="広告"></a></li>
+    <li><a href="#"><img src="img/canva/rental2.png" alt="広告"></a></li>
+    <li>
+     <a href="#"><img src="img/canva/NEWOPEN.png" alt="広告"></a>
+    </li>
+    <li><a href="#"><img src="img/canva/4starhotel.png" alt="広告"></a></li>
+    <li><a href="#"><img src="img/canva/NEWOPEN.png" alt="広告"></a></li>
+   </ul>
+  </div>
+
+
+
+  <!-- メインメニュー -->
+  <div class=" container">
+   <h2 id="kreserve">予約</h2>
+   <div class="reservebox">
+    <section class="air">
+     <div class="formbox_place">
+      <form action="#" method="post">
+       <div class="buttonselect">
+        <dt>
+        <dd>
+         <label>
+          往復<input type="radio" name="category" checked>
+         </label>
+         <label>
+          片道<input type="radio" name="category">
+         </label>
+        </dd>
+        </dt>
+       </div>
+
+       <div class="formline">
+        <fieldset>
+         <legend>出発地：</legend>
+         <input name="takeon" list="takeon">
+         <datalist id="takeon">
+          <option value="東京"></option>
+          <option value="名古屋"></option>
+          <option value="大阪"></option>
+          <option value="福岡"></option>
+          <option value="沖縄"></option>
+         </datalist>
+        </fieldset>
+
+        <fieldset>
+         <legend>到着地：</legend>
+         <input name="takeoff" list="takeoff">
+         <datalist id="takeoff">
+          <option value="ソウル"></option>
+          <option value="大邱"></option>
+          <option value="水原"></option>
+          <option value="釜山"></option>
+          <option value="済州島"></option>
+         </datalist>
+        </fieldset>
+       </div>
+
+       <div class="formline">
+        <fieldset>
+         <legend>出発日：</legend><input type="date">
+        </fieldset>
+        <fieldset>
+         <legend>到着日：</legend><input type="date">
+        </fieldset>
+       </div>
+
+       <p>搭乗人数</p>
+       <div class="formline">
+        <fieldset>
+         <legend>大人：</legend>
+         <input type="number" min="1" max="5">
+        </fieldset>
+        <fieldset>
+         <legend>子ども：</legend>
+         <input type="number" min="1" max="5">
+        </fieldset>
+       </div>
+
+      </form>
+      <p class="button1"><a href=" #">最安値を検索</a></p>
+     </div>
+    </section>
+
+
+
+
+
+    <!-- <div class="container"> -->
+    <!-- <h2>ホテル予約</h2> -->
+    <section class="air">
+     <div class="hotelreserve">
+      <form action="#" method="post">
+       <fieldset>
+        <legend>都市・エリア・ホテル名</legend>
+        <input type="text" placeholder="例:)弘大&#x3000;ホテル">
+       </fieldset>
+
+       <div class="formline">
+        <fieldset>
+         <legend>チェックイン</legend>
+         <input type="date">
+        </fieldset>
+        <fieldset>
+         <legend>チェックアウト</legend>
+         <input type="date">
+        </fieldset>
+       </div>
+
+       <fieldset>
+        <legend>部屋数</legend>
+        <input type="number" min="1" max="5">
+       </fieldset>
+       <p class="button1"><a href=" #">検索</a></p>
+      </form>
+     </div>
+    </section>
+   </div>
+  </div>
+
+
+
+  <!-- 航空券ツアー -->
+  <div class="back">
+   <div class="container">
+    <h2>お得な格安航空券</h2>
+    <div class="tourpack">
+     <div class="leftpack">
+      <ul>
+       <li class="packbox">
+        <a href="#">
+         <div class="yoko">
+          <img src="img/tourpack/namusantower.png" alt="南山タワー">
+          <ul class="inul">
+           <li>
+            <p class="litop">成田→ソウル</p>
+           </li>
+           <li class="lidown">４月限定格安航空券
+            <br>
+            <span>ここからチェック！</span>
+           </li>
+           <li>
+            <p class="pagetop">2023年4月以降</p>
+           </li>
+          </ul>
+         </div>
+        </a>
+       </li>
+
+       <li class="packbox">
+        <a href="#">
+         <div class="yoko">
+          <img src="img/tourpack/tourjinzya.png" alt="韓国神社">
+          <ul class="inul">
+           <li>
+            <p class="litop">羽田→ソウル（往復）</p>
+           </li>
+           <li class="lidown">GW特別価格航空券
+            <br>
+            <span>30,000円から</span>
+           </li>
+           <li>
+            <p class="pagetop">５月７日まで</p>
+           </li>
+          </ul>
+         </div>
+        </a>
+       </li>
+
+       <li class="packbox">
+        <a href="#">
+         <div class="yoko">
+          <img src="img/tourpack/koreanahotel.png" alt="韓国ホテル">
+          <ul class="inul">
+           <li>
+            <p class="litop">成田→ソウル（往復）</p>
+           </li>
+           <li class="lidown">＋ホテル付きパック
+            <br>
+            <span>好評発売中</span>
+           </li>
+           <li>
+            <p class="pagetop">2万円台から</p>
+           </li>
+          </ul>
+         </div>
+        </a>
+       </li>
+
+
+      </ul>
+     </div>
+
+     <div class="rightpack">
+      <ul>
+       <li class="packbox">
+        <a href="#">
+         <div class="yoko">
+          <img src="img/tourpack/pusan.png" alt="釜山">
+          <ul class="inul">
+           <li>
+            <p class="litop">大阪→釜山</p>
+           </li>
+           <li class="lidown">エコノミークラス
+            <br>
+            <span>25,000円から</span>
+           </li>
+           <li>
+            <p class="pagetop">６月搭乗分</p>
+           </li>
+          </ul>
+         </div>
+        </a>
+       </li>
+
+       <li class="packbox">
+        <a href="#">
+         <div class="yoko">
+          <img src="img/tourpack/suwon.png" alt="水原">
+          <ul class="inul">
+           <li>
+            <p class="litop">成田→ソウル（往復）</p>
+           </li>
+           <li class="lidown">水原華城ツアー
+            <br>
+            <span>45,000円から</span>
+           </li>
+           <li>
+            <p class="pagetop">6月搭乗分</p>
+           </li>
+          </ul>
+         </div>
+        </a>
+       </li>
+
+       <li class="packbox">
+        <a href="#">
+         <div class="yoko">
+          <img src="img/tourpack/tourpada.png" alt="済州島">
+          <ul class="inul">
+           <li>
+            <p class="litop">成田→済州島</p>
+           </li>
+           <li class="lidown">直行便もアリ
+            <br>
+            <span>運行情報</span>
+           </li>
+           <li>
+            <p class="pagetop">6月搭乗分</p>
+           </li>
+          </ul>
+         </div>
+        </a>
+       </li>
+      </ul>
+     </div>
+
+
+    </div>
+   </div>
+  </div>
+
+
+
+  <!-- 新着情報▽ -->
+  <div class="voice container">
+   <h2>お知らせ</h2>
+   <div class="info">
+    <ul>
+     <li>
+      <p><span>2022.11.01</span><a href="#">韓国/出発前PCR検査廃止&11月以降もビザなし渡航が可能</a></p>
+     </li>
+     <li>
+      <p><span>2022.08.04</span><a href="#">電子渡航認証&#xFF1A;K-ETAについて</a></p>
+     </li>
+    </ul>
+    <p class="button"><a href="#">詳しくはこちら</a></p>
+   </div>
+  </div>
+  <!-- 新着情報△ -->
+
+
+
+
+  <div class="back">
+   <div class="container">
+    <h2>MENU</h2>
+   </div>
+
+   <div class="mainmenu container">
+    <section>
+     <p><a href="next.html"><img src="img/informationpng.png" alt="韓国情報"></a></p>
+     <div>
+      <h3><a href="next.html">基本情報</a></h3>
+      <ul>
+       <li><a href="#">出国から入国まで</a></li>
+       <li><a href="#">交通機関情報</a></li>
+       <li><a href="#">持ち物チェックリスト</a></li>
+      </ul>
+     </div>
+    </section>
+
+
+    <section>
+
+     <p><a href="food.html"><img src="img/kimpa.png" alt="食べ物"></a></p>
+     <div>
+      <h3><a href="food.html">グルメ</a></h3>
+      <ul>
+       <li><a href="#">人気料理ランキング</a></li>
+       <li><a href="#">現地の人おススメ！</a></li>
+       <li><a href="#">迷ったらここへ定番料理</a></li>
+      </ul>
+     </div>
+
+    </section>
+
+    <section>
+     <p><a href="#"><img src="img/kanhuku.png" alt="観光"></a></p>
+     <div>
+      <h3><a href="#">観光</a></h3>
+      <ul>
+       <li><a href="#">韓国ソウルの観光名所</a></li>
+       <li><a href="#">Nソウルタワー</a></li>
+       <li><a href="">漢江遊覧船</a></li>
+      </ul>
+     </div>
+    </section>
+
+    <section>
+     <p><a href="#"><img src="img/1432489_s 1.png" alt="ショッピング"></a></p>
+     <div>
+      <h3><a href="#">ショッピング</a></h3>
+      <ul>
+       <li><a href="#">眠らない街 東大門</a></li>
+       <li><a href="#">お土産定番ランキング</a></li>
+       <li><a href="#">韓国コスメ買うならココ</a></li>
+      </ul>
+     </div>
+    </section>
+
+    <section>
+     <p><a href="#"><img src="img/estepng.png" alt="エステ"></a></p>
+     <div>
+      <h3><a href="#">エステ</a></h3>
+      <ul>
+       <li><a href="#">初めての韓国エステ</a></li>
+       <li><a href="#">日本語OK予約可能</a></li>
+       <li><a href="#">現地人が行く美容皮膚科</a></li>
+      </ul>
+     </div>
+    </section>
+
+
+    <section>
+     <p><a href="#"><img src="img/kankokugo.png" alt="韓国語"></a></p>
+     <div>
+      <h3><a href="#">韓国語</a></h3>
+      <ul>
+       <li><a href="#">ハングルの基礎</a></li>
+       <li><a href="#">旅行で使える基本フレーズ集</a></li>
+      </ul>
+     </div>
+    </section>
+
+
+    <section>
+     <p><a href="#"><img src="img/koutsu.png" alt="交通情報"></a></p>
+     <div>
+      <h3><a href="">交通情報</a></h3>
+      <ul>
+       <li><a href="#">ソウルの地下&タクシー</a></li>
+       <li><a href="#">タクシーに乗る前に</a></li>
+       <li><a href="#">KTX鉄道</a></li>
+      </ul>
+     </div>
+    </section>
+
+    <section>
+     <p><a href="#"><img src="img/tourreservepng.png" alt="ツアー予約"></a></p>
+     <div>
+      <h3><a href="">ツアー予約</a></h3>
+      <ul>
+       <li><a href="#">おすすめツアー</a></li>
+       <li><a href="#">KTX鉄道割引チケット</a></li>
+       <li><a href="#">大人気ドラマ撮影地</a></li>
+      </ul>
+     </div>
+    </section>
+
+    <section>
+     <p><a href="#"><img src="img/wifi.png" alt=" ﾓﾊﾞｲﾙ予約"></a></p>
+     <div>
+      <h3><a href="">ﾓﾊﾞｲﾙ予約</a></h3>
+      <ul>
+       <li><a href="#">WI-FIﾙｰﾀｰﾚﾝﾀﾙ</a></li>
+       <li><a href="#">SIMカード</a></li>
+       <li><a href="#">ご利用ガイド</a></li>
+      </ul>
+     </div>
+    </section>
+   </div>
+  </div>
+
+
+
+  <!-- ツアーリスト↓ -->
+  <div class="container">
+   <h2>韓国のおすすめスポットツアー</h2>
+  </div>
+  <div class="container">
+
+   <ul class="tourlist">
+    <li>
+     <a href="#">
+      <p class="tourphoto"><img src="img/sejontaiou 1.png" alt="世宗大王"></p>
+      <h3>世宗大王のハングル歴史ツアー</h3>
+
+      <p class="price">KRW 30,000~</p>
+     </a>
+    </li>
+
+    <li>
+     <a href="#">
+      <p class="tourphoto"><img src="img/sejontaiou 1-2.png" alt="南大門"></p>
+      <h3>南大門ショッピングガイド付きツアー</h3>
+
+      <p class="price">KRW 10,000~</p>
+     </a>
+    </li>
+
+    <li>
+     <a href="#">
+      <p class="tourphoto"><img src="img/sejontaiou 1-1.png" alt="北村韓屋村"></p>
+      <h3>北村韓屋村(韓服体験付き)ツアー</h3>
+      <p class="price">KRW 70,000~</p>
+     </a>
+    </li>
+
+    <li>
+     <a href="#">
+      <p class="tourphoto"><img src="img/hangan2.png" alt="漢江ナイトクルーズ"></p>
+      <h3>漢江ナイトクルーズ（ディナー付き）</h3>
+      <p class="price">KRW 120,000~</p>
+     </a>
+    </li>
+
+    <li>
+     <a href="#">
+      <p class="tourphoto"><img src="img/tour/lotte2.png" alt="ロッテワールド"></p>
+      <h3>ロッテワールド 1日フリーパスチケット</h3>
+
+      <p class="price">KRW 42000～</p>
+     </a>
+    </li>
+
+    <li>
+     <a href="#">
+      <p class="tourphoto"><img src="img/sejontaiou 1.png" alt="世宗大王"></p>
+      <h3>世宗大王のハングル歴史ツアー</h3>
+
+      <p class="price">KRW 30,000~</p>
+     </a>
+    </li>
+
+    <li>
+     <a href="#">
+      <p class="tourphoto"><img src="img/sejontaiou 1.png" alt="世宗大王"></p>
+      <h3>世宗大王のハングル歴史ツアー</h3>
+
+      <p class="price">KRW 30,000~</p>
+     </a>
+    </li>
+
+    <li>
+     <a href="#">
+      <p class="tourphoto"><img src="img/sejontaiou 1.png" alt="世宗大王"></p>
+      <h3>世宗大王のハングル歴史ツアー</h3>
+
+      <p class="price">KRW 30,000~</p>
+     </a>
+    </li>
+   </ul>
+
+   <p class="button1"><a href="#">他のツアーへ</a></p>
+  </div>
+
+
+
+
+
+  <section class="cm">
+   <div class="container">
+    <p><a href="#"><img src=" img/cmbanner.png" alt=""></a></p>
+   </div>
+  </section>
+
+
+
+
+
+
+ </main>
+
+ <footer>
+  <p class="pagetop"><a href="#top"><img src="img/pagescroll.png" alt="ページトップへ"></a></p>
+  <div class="Company">
+   <ul>
+    <li>
+     <a href="#">会社紹介</a>
+    </li>
+    <li><a href="#">プライバシーについて</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+    <li><a href="#">よくある質問</a></li>
+   </ul>
+  </div>
+  <p class="copyright">
+   <small>
+    &copy;2023 KOREANTRIP.
+   </small>
+  </p>
+ </footer>
+ <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ <script src="js/jquery.inview.min.js"></script>
+ <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- まずはリンクでCSS読み込み→/body直上に
+<script>cdn(どこで読み込むか)
+<script>script.jsファイル読み込む -->
