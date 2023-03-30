@@ -40,24 +40,24 @@ $("ul.tourlist").slick({
 //   });
 // });
 
-$("ul.slider").slick({
-  autoplay: true,
-  centerMode: true,
-  centerPadding: "60px",
-  slidesToShow: 3,
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: "40px",
-        slidesToShow: 1,
-      },
-    },
-  ],
-});
+// $("ul.slider").slick({
+//   autoplay: true,
+//   centerMode: true,
+//   centerPadding: "60px",
+//   slidesToShow: 3,
+//   dots: true,
+//   responsive: [
+//     {
+//       breakpoint: 767,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: "40px",
+//         slidesToShow: 1,
+//       },
+//     },
+//   ],
+// });
 
 $(function () {
   $(".slider").slick({
