@@ -26,38 +26,38 @@ $("ul.tourlist").slick({
   ],
 });
 
-// // スクロールして表示領域に入ったらclass付与
-// $(function () {
-//   $(".js-fadeUp").on("inview", function () {
-//     $(this).addClass("is-inview");
-//   });
-// });
+// スクロールして表示領域に入ったらclass付与
+$(function () {
+  $(".js-fadeUp").on("inview", function () {
+    $(this).addClass("is-inview");
+  });
+});
 
-// // スクロールして表示領域に入ったらclass付与
-// $(function () {
-//   $(".js-fadedown").on("inview", function () {
-//     $(this).addClass("is-inview");
-//   });
-// });
+// スクロールして表示領域に入ったらclass付与
+$(function () {
+  $(".js-fadedown").on("inview", function () {
+    $(this).addClass("is-inview");
+  });
+});
 
-// $("ul.slider").slick({
-//   autoplay: true,
-//   centerMode: true,
-//   centerPadding: "60px",
-//   slidesToShow: 3,
-//   dots: true,
-//   responsive: [
-//     {
-//       breakpoint: 767,
-//       settings: {
-//         arrows: false,
-//         centerMode: true,
-//         centerPadding: "40px",
-//         slidesToShow: 1,
-//       },
-//     },
-//   ],
-// });
+$("ul.slider").slick({
+  autoplay: true,
+  centerMode: true,
+  centerPadding: "60px",
+  slidesToShow: 3,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: "40px",
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
 
 $(function () {
   $(".slider").slick({
