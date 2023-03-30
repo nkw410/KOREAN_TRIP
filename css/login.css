@@ -30,6 +30,12 @@ main div.login {
   border: 2px solid hwb(0 25% 73% / 0.26);
   border-radius: 15px;
 }
+@media (max-width: 767px) {
+  main div.login {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
 
 main div.login p.logintitle {
   font-weight: 700;
@@ -58,11 +64,16 @@ main p.send a {
   font-size: 25px;
   padding: 8px 80px;
   display: block;
-  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  main p.send a {
+    padding: 8px 60px;
+  }
 }
 
 main div.login p.right {
@@ -72,17 +83,6 @@ main div.login p.right {
 
 main div.login p.right a:hover {
   text-decoration: underline;
-}
-
-section.cm {
-  background-image: url(../img/airplain.png);
-  background-size: cover;
-  text-align: center;
-}
-@media (max-width: 767px) {
-  section.cm {
-    background-position: cover;
-  }
 }
 
 main div.login div.newaccount p.new1 {
@@ -99,11 +99,26 @@ main div.login div.newaccount p.new2 {
   font-size: 25px;
   padding: 8px 80px;
   display: block;
-  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 15px;
   cursor: pointer;
   white-space: nowrap;
+}
+@media (max-width: 767px) {
+  main div.login div.newaccount p.new2 {
+    padding: 8px 40px;
+  }
+}
+section.cm {
+  background-image: url(../img/airplain.png);
+  background-size: cover;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  section.cm {
+    background-position: cover;
+  }
 }
