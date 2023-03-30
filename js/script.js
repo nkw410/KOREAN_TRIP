@@ -26,21 +26,22 @@ $("ul.tourlist").slick({
   ],
 });
 
-// スクロールして表示領域に入ったらclass付与
-$(function () {
-  $(".js-fadeUp").on("inview", function () {
-    $(this).addClass("is-inview");
-  });
-});
+// // スクロールして表示領域に入ったらclass付与
+// $(function () {
+//   $(".js-fadeUp").on("inview", function () {
+//     $(this).addClass("is-inview");
+//   });
+// });
 
-// スクロールして表示領域に入ったらclass付与
-$(function () {
-  $(".js-fadedown").on("inview", function () {
-    $(this).addClass("is-inview");
-  });
-});
+// // スクロールして表示領域に入ったらclass付与
+// $(function () {
+//   $(".js-fadedown").on("inview", function () {
+//     $(this).addClass("is-inview");
+//   });
+// });
 
 $("ul.slider").slick({
+  autoplay: true,
   centerMode: true,
   centerPadding: "60px",
   slidesToShow: 3,
@@ -56,4 +57,26 @@ $("ul.slider").slick({
       },
     },
   ],
+});
+
+$(function () {
+  $(".slider").slick({
+    autoplay: true, // 自動再生ON
+    dots: true, // ドットインジケーターON
+    centerMode: true, // 両サイドに前後のスライド表示
+    centerPadding: "0px", // 左右のスライドのpadding
+    slidesToShow: 3,
+    // 一度に表示するスライド数
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 });

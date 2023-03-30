@@ -20,3 +20,22 @@ main article form {
   margin-top: 29px;
   margin-bottom: 41px;
 }
+
+/* 中央以外のスライド */
+div.slick-img img {
+  height: auto;
+  opacity: 0.3;
+  /* // スライドを薄くする */
+  transform: scale(0.8);
+  /* // スライドのサイズを80%にする */
+  transition: opacity 0.5s, transform 0.5s;
+  /* // スライド透過率と拡大のアニメーション時間を0.5秒に設定 */
+  width: 100%;
+}
+/* 中央のスライド */
+div.slider .slick-center img {
+  opacity: 1;
+  /* // 中央のスライドは透過しない */
+  transform: scale(1);
+  /* // 中央のスライドは小さくしない */
+}
