@@ -520,11 +520,11 @@ div.tourpack div.rightpack ul li.packbox {
 }
 
 main div.tourpack div.leftpack ul a:hover div.yoko {
-  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.411);
 }
 
 main div.tourpack div.rightpack ul li.packbox a:hover div.yoko {
-  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.411);
 }
 
 div.yoko ul.inul li p.pagetop {
