@@ -59,7 +59,8 @@ main div.login input[type="password"] {
 
 main p.send a {
   text-align: center;
-  background-color: #fd5f00;
+  background: linear-gradient(to top, rgba(253, 97, 0, 0.74), #fd6100);
+  border: 1px solid #fd6100ee;
   color: #fff;
   font-size: 25px;
   padding: 8px 80px;
